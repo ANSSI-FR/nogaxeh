@@ -1,0 +1,7 @@
+This directory contains the source code for an IDA Pro module
+targeting Qualcomm's Hexagon (QDSP6) v5 processor architecture.
+
+To compile it, copy hexagon within idasdk/module, edit module/
+module.mak and add $(F)context$(O) at the end of OBJS=...
+After running make, the resulting hexagon.ilx module should be
+copied to the procs directory of your IDA Pro installation.
